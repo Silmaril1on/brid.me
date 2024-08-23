@@ -9,7 +9,7 @@ import ArrowSvg from "@/app/components/buttons/ArrowSvg";
 const BridProjectsList = () => {
   return (
     <div className="pt-40">
-      <div className="grid grid-col-1 md:grid-cols-3 2xl:grid-cols-4 gap-4 p-5">
+      <div className="grid grid-col-1 md:grid-cols-3 hd:grid-cols-4 gap-4 p-5">
         {projectsData.map((project) => {
           return (
             <Link

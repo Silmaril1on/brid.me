@@ -1,9 +1,8 @@
-import React from "react";
 import BridProjectsList from "./BridProjectsList";
 
 const BridProjects = () => {
   return (
-    <div className="">
+    <div>
       <BridProjectsList />
     </div>
   );

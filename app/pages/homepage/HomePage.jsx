@@ -6,7 +6,7 @@ import Services from "./homeservice/Services";
 
 const HomePage = () => {
   return (
-    <section className="mt-14">
+    <section className="mt-[48px]">
       <Header />
       <Services />
       <Carousel />
