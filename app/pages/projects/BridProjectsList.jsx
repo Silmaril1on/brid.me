@@ -39,7 +39,7 @@ const BridProjectsList = () => {
                   <Image
                     className="w-full h-full object-cover hover:scale-110 duration-300"
                     src={project.image}
-                    alt="horizon"
+                    alt="Brid Cover Pics"
                     quality={80}
                     width={600}
                   />

@@ -11,7 +11,7 @@ import image12 from "@/app/assets/agrohubwhinery/12.jpg";
 import image13 from "@/app/assets/agrohubwhinery/13.jpg";
 import image14 from "@/app/assets/agrohubwhinery/14.jpg";
 import image16 from "@/app/assets/agrohubwhinery/16.jpg";
-import image20 from "@/app/assets/agrohubwhinery/20.png";
+import image20 from "@/app/assets/agrohubwhinery/20.jpg";
 import image21 from "@/app/assets/agrohubwhinery/21.jpg";
 import image22 from "@/app/assets/agrohubwhinery/22.jpg";
 import image23 from "@/app/assets/agrohubwhinery/23.jpg";

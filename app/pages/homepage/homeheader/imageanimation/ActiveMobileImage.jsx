@@ -14,28 +14,22 @@ import Headline from "./Headline";
 const ActiveMobileImage = () => {
   const mobileImages = [mob2, mob1, mob4, mob3, mob6, mob7, mob5, mob8];
   const [index, setIndex] = useState(0);
-  const [activePhoto, setActivePhoto] = useState(mobileImages[index]);
 
   const changeIndex = () => {
-    setIndex(index + 1);
-    if (index === 7) {
-      setIndex(0);
-    }
+    setIndex((prevIndex) => (prevIndex + 1) % mobileImages.length);
   };
 
-  useEffect(() => {
-    setActivePhoto(mobileImages[index]);
-  }, [index]);
+  useEffect(() => {}, [index]);
 
   return (
     <div onClick={changeIndex} className="w-full h-full md:hidden block">
       <Image
         className="w-full h-full object-cover"
-        src={activePhoto}
+        src={mobileImages[index]}
         alt="Brid-Project-Pics"
         quality={80}
         width={500}
-        priority
+        priority={index === 0}
       />
       <Headline />
     </div>
