@@ -19,8 +19,6 @@ const ContentProject = ({ data }) => {
                 quality={50}
                 width={1920}
                 height={1080}
-                placeholder="blur"
-                blurDataURL={imageUrl}
               />
             ) : (
               <Image
@@ -31,8 +29,6 @@ const ContentProject = ({ data }) => {
                 quality={100}
                 width={1920}
                 height={1080}
-                placeholder="blur"
-                blurDataURL={imageUrl}
               />
             )}
           </div>
