@@ -25,6 +25,7 @@ module.exports = {
         secondary: "open sans",
       },
       screens: {
+        "3xl": "1650px",
         hd: "1750px",
       },
       zIndex: {

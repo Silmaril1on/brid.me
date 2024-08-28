@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const BenefitsHeader = () => {
   return (
-    <div className="w-full md:w-[45%] overflow-hidden flex flex-row items-end lg:items-center justify-between lg:justify-center relative my-7 lg:my-0 border-style lg:border-none">
+    <div className="w-full md:w-[45%] overflow-hidden flex flex-row items-end lg:items-center justify-between lg:justify-center relative my-7 lg:my-0 border-style py-5 lg:py-0 lg:border-none">
       <div className="overflow-hidden ">
         <motion.div
           variants={headlineAnimation}

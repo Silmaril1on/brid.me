@@ -9,7 +9,7 @@ import ArrowSvg from "@/app/components/buttons/ArrowSvg";
 const BridProjectsList = () => {
   return (
     <div className="pt-40">
-      <div className="grid grid-col-1 md:grid-cols-3 hd:grid-cols-4 gap-4 p-5">
+      <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 gap-4 p-5">
         {projectsData.map((project) => {
           return (
             <Link
@@ -22,7 +22,7 @@ const BridProjectsList = () => {
                 whileInView="visible"
                 variants={staggerSlideUp}
                 viewport={{ once: true }}
-                className="w-full *:duration-300 relative duration-500 flex flex-col h-[400px] lg:h-full"
+                className="w-full max-w-[450px] *:duration-300 relative duration-500 flex flex-col h-auto lg:h-full"
               >
                 <article className="flex flex-row w-full border-b border-lineColor mb-2">
                   <div className="flex flex-row w-full">
@@ -35,7 +35,7 @@ const BridProjectsList = () => {
                   </div>
                 </article>
 
-                <div className="w-full h-80 overflow-hidden">
+                <div className="w-full h-[330px] overflow-hidden">
                   <Image
                     className="w-full h-full object-cover hover:scale-110 duration-300"
                     src={project.image}
