@@ -85,7 +85,7 @@ const UserForm = () => {
             id="2"
             onClick={() => setActive(2)}
             onMouseLeave={() => setActive(false)}
-            className="w-full border-b border-lineColor flex flex-row justify-start *:placeholder:pt-2 *:lg:placeholder:pt-1"
+            className="w-full border-b border-lineColor flex flex-row justify-start *:placeholder:pt-1"
           >
             <div className="arrow-size">
               {active === 2 ? <GreenArrow /> : <ArrowSvg />}
