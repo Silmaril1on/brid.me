@@ -35,7 +35,7 @@ const BridProjectsList = () => {
                   </div>
                 </article>
 
-                <div className="w-full h-[270px] overflow-hidden">
+                <div className="w-full h-[270px] lg:h-[330px] overflow-hidden">
                   <Image
                     className="w-full h-full object-cover hover:scale-110 duration-300"
                     src={project.image}
