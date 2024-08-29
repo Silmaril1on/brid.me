@@ -146,7 +146,7 @@ const UserForm = () => {
           id="7"
           onClick={() => setActive(7)}
           onMouseLeave={() => setActive(false)}
-          className="form-child-container"
+          className="form-child-container *:placeholder:pt-1"
         >
           <div className="arrow-size">
             {active === 7 ? <GreenArrow /> : <ArrowSvg />}
@@ -154,7 +154,7 @@ const UserForm = () => {
           <textarea
             name="message"
             placeholder="project description"
-            className="footer-input-style rounded-3xl h-36 focus:placeholder:text-green placeholder:pt-2 lg:placeholder:pt-1"
+            className="footer-input-style rounded-3xl h-36 focus:placeholder:text-green"
           ></textarea>
         </div>
         <section className="flex flex-row justify-between w-full px-2 md:px-16">
