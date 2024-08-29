@@ -22,7 +22,7 @@ module.exports = {
         black: "#000000",
       },
       fontFamily: {
-        secondary: "open sans",
+        secondary: "roboto-light",
       },
       screens: {
         "3xl": "1650px",
