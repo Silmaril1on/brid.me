@@ -10,10 +10,10 @@ const SectionHeadline = ({ text, className }) => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="px-3 lg:px-4 lg:py-3"
+        className="px-3 lg:px-4 lg:py-3 "
       >
         <motion.h1
-          className="text-6xl md:text-8xl lg:text-[150px] lg:leading-[130px] text-white"
+          className="text-6xl md:text-8xl lg:text-[150px] lg:leading-[130px] text-white py-1 lg:py-0"
           variants={headlineAnimation}
         >
           {text}
