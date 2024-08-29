@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "BRID | Home",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body style={myFont.style} className="flex justify-center">
         {children}
+        <Analytics />
       </body>
     </html>
   );

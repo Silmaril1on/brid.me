@@ -37,7 +37,7 @@ const SwiperCard = ({ project, animation }) => {
                 {truncateString(proj.name.toLocaleString(), 20)}
               </h1>
             </article>
-            <div className="overflow-hidden  h-60 w-full">
+            <div className="overflow-hidden h-60 w-full">
               <Image
                 className="duration-300 hover:scale-110 h-full w-full object-cover pointer-events-none"
                 src={proj.image}
