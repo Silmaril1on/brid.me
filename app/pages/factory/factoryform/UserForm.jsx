@@ -162,7 +162,7 @@ const UserForm = () => {
             <h1 className="text-[8px] md:text-xs">
               Our meeting will be scheduled by our manager
             </h1>
-            <h6 className="text-green text-[9px]">approximate time 2 days</h6>
+            <h1 className="text-green text-[9px]">approximate time 2 days</h1>
           </div>
           <input
             type="submit"
