@@ -1,18 +1,28 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import img1 from "@/app/assets/headerphotos/01.gif";
 import img2 from "@/app/assets/headerphotos/02.jpg";
-import img3 from "@/app/assets/headerphotos/03.gif";
 import img4 from "@/app/assets/headerphotos/04.jpg";
 import img5 from "@/app/assets/headerphotos/05.jpg";
 import img6 from "@/app/assets/headerphotos/06.jpg";
 import img7 from "@/app/assets/headerphotos/07.jpg";
-import img8 from "@/app/assets/headerphotos/08.gif";
-import img9 from "@/app/assets/headerphotos/09.gif";
+const video1 = "/01.webm";
+const video3 = "/03.webm";
+const video8 = "/08.webm";
+const video9 = "/09.webm";
 
 const ActiveImage = () => {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+  const media = [
+    { type: "video", src: video1 },
+    { type: "image", src: img2 },
+    { type: "video", src: video3 },
+    { type: "image", src: img4 },
+    { type: "image", src: img5 },
+    { type: "image", src: img6 },
+    { type: "image", src: img7 },
+    { type: "video", src: video8 },
+    { type: "video", src: video9 },
+  ];
   const [index, setIndex] = useState(0);
   const containerRef = useRef(null);
 
@@ -33,9 +43,9 @@ const ActiveImage = () => {
           const xRatio = (event.clientX - left) / containerWidth;
           const yRatio = (event.clientY - top) / containerHeight;
           const combinedRatio = (xRatio + yRatio) / 2;
-          const newIndex = Math.floor(combinedRatio * images.length);
+          const newIndex = Math.floor(combinedRatio * media.length);
 
-          setIndex(newIndex >= images.length ? 0 : newIndex);
+          setIndex(newIndex >= media.length ? 0 : newIndex);
         }
       }
     };
@@ -45,18 +55,27 @@ const ActiveImage = () => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [images.length]);
+  }, [media.length]);
+
+  const { type, src } = media[index];
 
   return (
     <div ref={containerRef} className="w-full h-full">
-      <Image
-        className="w-full object-cover h-full"
-        src={images[index]}
-        alt="animation"
-        priority
-        quality={80}
-        width={1920}
-      />
+      {type === "video" ? (
+        <video className="w-full h-full object-cover" autoPlay muted loop>
+          <source src={src} type="video/webm" />
+        </video>
+      ) : (
+        <Image
+          className="w-full object-cover h-full"
+          src={src}
+          alt="media"
+          priority
+          quality={80}
+          width={1920}
+          height={1080}
+        />
+      )}
     </div>
   );
 };
