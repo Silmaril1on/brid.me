@@ -11,7 +11,7 @@ const HomePage = () => {
       <Services />
       <Carousel />
       <Awards />
-      {/* <HomeForm /> */}
+      <HomeForm />
     </section>
   );
 };
