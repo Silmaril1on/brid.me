@@ -220,7 +220,7 @@ const projectsData = [
     image: touch,
     projectImages: touchImages,
     about:
-      "we try to understand client’s requirements the best that we can and offer effective ways to solve for their business. we try to understand client’s requirements the best that we can and offer effective ways to solve for their business.",
+      "Touch is the digital platform connecting digital professionals, startups, business and investors.",
     scope: ["brand identity"],
   },
   {
