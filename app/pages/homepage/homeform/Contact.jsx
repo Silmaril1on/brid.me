@@ -8,11 +8,8 @@ const Contact = () => {
       <div className="w-full flex flex-col items-end *:text-[14px] mb-2">
         <h1>Al. kazbegi st. 12a</h1>
         <h1>+995 599 49 88 09</h1>
-        <a
-          href="mailto:agencybrid@gmail.com"
-          className="font-secondary lowercase"
-        >
-          agencybrid@gmail.com
+        <a href="mailto:id@brid.me" className="font-secondary lowercase">
+          id@brid.me
         </a>
       </div>
     </div>
