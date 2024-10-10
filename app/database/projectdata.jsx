@@ -23,6 +23,7 @@ import lost from "@/app/assets/cover_images/cover_lost.jpg";
 import viva from "@/app/assets/cover_images/cover_viva.jpg";
 import rose from "@/app/assets/cover_images/cover_wineRose.jpg";
 import georgia from "@/app/assets/cover_images/cover_georgia.jpg";
+import gbg from "@/app/assets/cover_images/cover_gbg.jpg";
 
 import {
   agrohubImages,
@@ -50,9 +51,19 @@ import {
   winnerprintsImages,
   wineRoseImages,
   georgiaImages,
+  gbgImages,
 } from "./imagesdata/exportImages";
 
 const projectsData = [
+  {
+    id: 0,
+    name: "GBG",
+    image: gbg,
+    projectImages: gbgImages,
+    about:
+      "GBG, a prominent cement company in Georgia, seeks to enhance its brand presence with a fresh logo and identity design that reflects its core values of strength, reliability, and sustainability in the construction industry. Logo Concept: 'Foundation of Strength'. Logo is representation of a building or structure that resembles a strong foundation which is symbolize stability and strength.",
+    scope: ["logotype", "brand identity", "packaging", "digital marketing"],
+  },
   {
     id: 0,
     name: "Horizon",

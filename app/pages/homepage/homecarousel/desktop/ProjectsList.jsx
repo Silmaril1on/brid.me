@@ -21,7 +21,7 @@ const ProjectsList = ({ project, name, image }) => {
               <ArrowSvg />
             </div>
             <h1 className="text-3xl center justify-start ml-3 w-full">
-              {truncateString(name.toLocaleString(), 14)}
+              {truncateString(name.toLocaleString(), 15)}
             </h1>
           </div>
         </article>
